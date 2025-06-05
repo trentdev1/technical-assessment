@@ -22,7 +22,6 @@ npm run start:prod
 ```
 
 You can access the API from [http://localhost:3000/api/articles](http://localhost:3000/api/articles).
-
 -
 
 # API Endpoints
@@ -30,7 +29,6 @@ You can access the API from [http://localhost:3000/api/articles](http://localhos
 - `GET /api/articles` — List all articles
 - `GET /api/articles/:id` — Get article by ID
 - `POST /api/articles` — Add a new article (JSON body)
-
 -
 
 # Testing
