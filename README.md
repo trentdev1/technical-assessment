@@ -1,6 +1,6 @@
 # technical-assessment
 
-Setup & Run Instructions
+## Setup & Run Instructions
 -
 # Setup
 ```bash
