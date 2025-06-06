@@ -1,7 +1,5 @@
 # technical-assessment
 
-## Setup & Run Instructions
-
 # Setup
 ```bash
 git clone <your-repo-url>
