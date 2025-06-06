@@ -52,7 +52,7 @@ One of the first problems I encountered was with writing the JsonService. When w
 const lastID = ids.length > 0 ? Math.max(...ids) : 1;
 ```
 
-Whilst designing my API, I knew I wanted to make an OpenAPI specification as this is standard for APIs, and a really good habit to get into doing.
+Whilst designing my API, I knew I wanted to make an OpenAPI specification as this is standard for APIs, and a really good habit to get into doing. To do this, I used AI to generate a very basic OpenAPI 
 
 Summary of what I learned
 -
