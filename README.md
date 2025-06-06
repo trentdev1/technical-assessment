@@ -71,6 +71,8 @@ As I decided to consider this technical assessment as an opportunity to further 
 - The names of functions (and briefly what they do)
 - The expected result
 
+AI Model used: ChatGPT 4.0
+
 # Usage 1
 
 Question
