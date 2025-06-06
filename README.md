@@ -60,6 +60,9 @@ Summary of what I learned
 -
 I decided to take this technical interview as an opportunity to develop my understanding of TypeScript by writing in this language. Therefore, I decided to use NestJS as my framework, as it is both what I am most familiar with and something I wish to improve my knowledge on.
 
+In regard to testing, I improved my understanding of mocking provider classes, and how and when to use certain methods such as `useValue` and `useClass`. This is very useful as now I can be sure I'm correctly mocking each provider each time I'm using one.
+In addition, I gained a more solid understanding of RESTful APIs and how to write OpenAPI specifications. This is significant as they are important principles for making modern APIs clear and easy to use. This way I can be confident that my APIs are correctly setup and they will be easy for another developer to pick up and use.
+
 AI Usage
 -
 As I decided to consider this technical assessment as an opportunity to further develop my knowledge of TypeScript & NestJS, I decided to use as little AI as I could. With this being said, I only used AI as an education tool to gain a better understanding of how different aspects of the program function, and to elaborate and expand my current knowledge. To do this, I was careful not to pass any code in my context, and only relevant information such as:
