@@ -72,7 +72,9 @@ As I decided to consider this technical assessment as an opportunity to further 
 
 Question
 -
+
 `In NestJS (TypeScript), what is the best way to mock my class JsonService in my service ArticlesService. What are the options I have and when would I use them?`
+
 Reply
 -
 | Approach          | Use Case               | Pros                | Cons                      |
