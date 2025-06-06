@@ -84,4 +84,4 @@ Reply
 
 Lessons learnt
 -
-This response helped me better understand when certain approaches to mocking classes should be used, as wel as their pros and cons. This allows me to decide which approach is best for me, rather than relying on an AI to decide for me.
+This response helped me better understand when certain approaches to mocking classes should be used, as well as their pros and cons. This allows me to decide which approach is best for me, rather than relying on an AI to decide for me.
