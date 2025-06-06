@@ -119,7 +119,7 @@ describe('ArticleService', () => {
 | ----------------- | ---------------------- | ------------------- | ------------------------- |
 | `useValue`        | Simple unit testing    | Easy, direct        | Verbose with many methods |
 | `jest.mock()`     | Auto-mocking libraries | Less boilerplate    | Needs proper Jest config  |
-| Custom Mock Class | Reusable mocks         | Cleaner, extendable | Slightly more setup       |
+| `useClass`        | Reusable mocks         | Cleaner, extendable | Slightly more setup       |
 | `useFactory`      | Dynamic tests          | Flexible per test   | Slightly more complex     |
 
 Lessons learnt
