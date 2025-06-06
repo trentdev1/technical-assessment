@@ -1,0 +1,20 @@
+{
+    "1": {
+        "title": "One",
+        "summary": "sum1",
+        "author": "John Doe",
+        "pubdate": "05-06-2025"
+    },
+    "2": {
+        "title": "Two",
+        "summary": "sum2",
+        "author": "Jane Doe",
+        "pubdate": "05-06-2025"
+    },
+    "3": {
+        "title": "Three",
+        "summary": "sum3",
+        "author": "John Doe",
+        "pubdate": "05-06-2025"
+    }
+}

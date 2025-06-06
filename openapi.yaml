@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: News Article API
+  version: 1.0.0
+
+paths:
+  /api/articles:
+    get:
+      summary: Get all articles
+      responses:
+        '200':
+          description: List of articles with IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+    post:
+      summary: Upload a new article
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: boolean
+
+  /api/articles/{id}:
+    get:
+      summary: Get an article by ID
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the article
+      responses:
+        '200':
+          description: The article with ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Article'
+        '404':
+          description: Article not found
+
+components:
+  schemas:
+    Article:
+      type: object
+      properties:
+        title:
+          type: string
+        summary:
+          type: string
+        author:
+          type: string
+        pubdate:
+          type: string
