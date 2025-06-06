@@ -52,6 +52,8 @@ One of the first problems I encountered was with writing the JsonService. When w
 const lastID = ids.length > 0 ? Math.max(...ids) : 1;
 ```
 
+Whilst writing unit tests for my `ArticlesService`, I .
+
 Summary of what I learned
 -
 I decided to take this technical interview as an opportunity to develop my understanding of TypeScript by writing in this language. Therefore, I decided to use NestJS as my framework, as it is both what I am most familiar with and something I wish to improve my knowledge on.
