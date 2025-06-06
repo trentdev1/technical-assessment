@@ -82,6 +82,39 @@ Question
 
 Reply
 -
+```typescript
+// Imports...
+
+// Mock class for JsonService
+class MockJsonService {
+  getData() {
+    return [{ id: 1, title: 'Mock Article' }];
+  }
+
+  // Add any other methods that ArticleService depends on
+}
+
+describe('ArticleService', () => {
+  let service: ArticleService;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        ArticleService,
+        {
+          provide: JsonService,
+          useClass: MockJsonService,
+        },
+      ],
+    }).compile();
+
+    service = module.get<ArticleService>(ArticleService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  }
+```
 | Approach          | Use Case               | Pros                | Cons                      |
 | ----------------- | ---------------------- | ------------------- | ------------------------- |
 | `useValue`        | Simple unit testing    | Easy, direct        | Verbose with many methods |
