@@ -87,3 +87,100 @@ Reply
 Lessons learnt
 -
 This response helped me better understand when certain approaches to mocking classes should be used, as well as their pros and cons. This allows me to decide which approach is best for me, rather than relying on an AI to decide for me.
+
+# Usage 2
+
+Question
+-
+```
+Write me a simple openAPI spec example for an API with 3 endpoints;
+- GET /articles
+- GET /articles/:id
+- POST /articles
+
+Leave comments where I need to fill information in (including the schema for posting to /articles)
+```
+
+Reply
+-
+```
+openapi: 3.0.0
+info:
+  title: Articles API
+  version: 1.0.0
+  description: A simple API for managing articles
+
+paths:
+  /articles:
+    get:
+      summary: Get a list of articles
+      responses:
+        '200':
+          description: A list of articles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+    post:
+      summary: Create a new article
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewArticle' # You will define this schema below
+      responses:
+        '201':
+          description: Article created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Article'
+
+  /articles/{id}:
+    get:
+      summary: Get an article by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string # Change to integer if needed
+          description: The ID of the article to retrieve
+      responses:
+        '200':
+          description: Article found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Article'
+        '404':
+          description: Article not found
+
+components:
+  schemas:
+    Article:
+      type: object
+      properties:
+        title:
+          type: string
+        summary:
+          type: string
+        author:
+          type: string
+        pubdate:
+          type: string
+      required:
+        - id
+        - title
+        - content
+        - author
+        - createdAt
+```
+
+Lessons learnt
+-
+
+From this usage, I gained a better understanding the basic boilerplate, and how to format an OpenAPI spec. Clearly, the version created by the AI is not complete, but it is a good first step, as I can iterate on top of it to cover all aspects of the API. This way, I'm writing the important parts myself, and getting a first hand understanding of what is happening.
