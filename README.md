@@ -65,7 +65,7 @@ In addition, I gained a more solid understanding of RESTful APIs and how to writ
 
 AI Usage
 -
-As I decided to consider this technical assessment as an opportunity to further develop my knowledge of TypeScript & NestJS, I decided to use as little AI as I could. With this being said, I only used AI as an education tool to gain a better understanding of how different aspects of the program function, and to elaborate and expand my current knowledge. To do this, I was careful not to pass any code in my context, and only relevant information such as:
+As I decided to consider this technical assessment as an opportunity to further develop my knowledge of TypeScript & NestJS, I decided to use as little AI as I could. Anywhere that I didn't use AI, I broke the problem down into smaller components and would learn different approaches through sites like StackOverflow and NestJS documentation. With this being said, I only used AI as an education tool to gain a better understanding of how different aspects of the program function, and to elaborate and expand my current knowledge. To do this, I was careful not to pass any code in my context, and only relevant information such as:
 - The name of the language
 - The framework
 - The names of functions (and briefly what they do)
