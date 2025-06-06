@@ -68,4 +68,16 @@ As I decided to consider this technical assessment as an opportunity to further 
 - The names of functions (and briefly what they do)
 - The expected result
 
+# Usage 1
 
+Question:
+`In NestJS (TypeScript), what is the best way to mock my class JsonService in my service ArticlesService. What are the options I have and when would I use them?`
+Reply:
+`
+| Approach          | Use Case               | Pros                | Cons                      |
+| ----------------- | ---------------------- | ------------------- | ------------------------- |
+| `useValue`        | Simple unit testing    | Easy, direct        | Verbose with many methods |
+| `jest.mock()`     | Auto-mocking libraries | Less boilerplate    | Needs proper Jest config  |
+| Custom Mock Class | Reusable mocks         | Cleaner, extendable | Slightly more setup       |
+| `useFactory`      | Dynamic tests          | Flexible per test   | Slightly more complex     |
+`
