@@ -52,7 +52,7 @@ One of the first problems I encountered was with writing the JsonService. When w
 const lastID = ids.length > 0 ? Math.max(...ids) : 1;
 ```
 
-Whilst designing my API, I knew I wanted to make an OpenAPI specification as this is standard for APIs, and a really good habit to get into doing. To do this, I used AI to generate a very basic OpenAPI 
+Whilst designing my API, I knew I wanted to make an OpenAPI specification as this is standard for APIs, and a really good habit to get into doing. To do this, I used AI to generate a very basic OpenAPI specification. Using rhe generated boilerplate, I built upon it until all API endpoints and their usage was covered. Using AI this way, instead of copy-pasting results, I can improve my knowledge and understanding by writing the specification first hand, ensuring I know what is happening rather than relying on AI to do all the heavy lifting.
 
 Summary of what I learned
 -
