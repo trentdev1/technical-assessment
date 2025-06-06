@@ -3,7 +3,7 @@
 # Setup
 ```bash
 git clone https://github.com/trentdev1/technical-assessment/
-cd news-article-api
+cd technical-assessment
 
 npm install
 ```
