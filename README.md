@@ -39,11 +39,18 @@ OpenAPI documentation at openapi.yaml
 
 Explanation of Solutions
 -
-My program uses NestJS to implement a basic RESTful API. This API is designed to interact with a database of new articles, used to POST and GET news articles with their data. The program will automaticaly assign a unique, ascending numberial ID to each uploaded article, and automatically return each article a new ID.
+My program uses NestJS to implement a basic RESTful API. This API is designed to interact with a database of new articles, used to POST and GET news articles with their data. The program will automaticaly assign a unique, ascending numberial ID to each uploaded article, and automatically return each article a new ID. I used 3 endpoints, allowing the user to post an article to the database, to get all articles and to get an article by it's ID.
+
+I decided to use JSON for this project as it's a simpler, yet very versatile file format that can easily be understood and worked with by most programming languages. I created a JSON service to abstract the code responsible for gathering and sorting data from the JSON file, which mimics a typical database layer such as a DynamoDBClient. I then created ArticlesService, which checks the result of these functions, and throws any relevant errors. If these pass they will be returned by the controller, which directly returns these results to the user at the API endpoints.
 
 Challenges
 -
+Whilst writing this project, I encountered many challenges which I believe helped me further develop my understanding of how NestJS and TypeScript function.
 
+One of the first problems I encountered was with writing the JsonService. When writing the UpdateArticle, I had to be sure that the passed information would be appended with a unique ID each time. Typically with unique IDs there are either UUIDs or numerical IDs. For this project, I decided to go for numerical IDs. This is because they are simple and easy to understand, and much easier to search with through an API endpoint. UUIDs would have been much longer, and would not serve this purpose well due to their length and complexity, making it much harder to remember and search for an article. To do this, I decided to use a simple tenerary expression. This first checks that the list isn't empty, and this passes it will determine the newest ID (largest number). There is also a fallback ID of 1 to start with, if there are no uploaded articles. The `ids` variable contains a list of all the IDs (article keys in `articles.json`).
+```typescript
+const lastID = ids.length > 0 ? Math.max(...ids) : 1;
+```
 
 Summary of what I learned
 -
