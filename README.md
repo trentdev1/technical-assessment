@@ -2,7 +2,7 @@
 
 # Setup
 ```bash
-git clone <your-repo-url>
+git clone [https://github.com/trentdev1/technical-assessment/](https://github.com/trentdev1/technical-assessment/)
 cd news-article-api
 
 npm install
