@@ -184,3 +184,7 @@ Lessons learnt
 -
 
 From this usage, I gained a better understanding the basic boilerplate, and how to format an OpenAPI spec. Clearly, the version created by the AI is not complete, but it is a good first step, as I can iterate on top of it to cover all aspects of the API. This way, I'm writing the important parts myself, and getting a first hand understanding of what is happening.
+
+# Security Concerns
+
+When using AI, there are always security concerns that, for legal purposes, should be acknowledged. For one, AI can tend to plaigerise other peoples code, as this is what they are trained on. In order to avoid this, I am careful with how I treat AI-generated code. Firstly, I don't copy-paste AI code as a lot of the time it isn't going to work. Instead, I pay attention to the chosen approach, and the explanation as to why the AI chose this approach. I will consider my program, and then determine the validity of the AI-generated code. If I believe the AI's approach is warranted, then I will
