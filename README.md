@@ -81,6 +81,7 @@ Reply
 | `jest.mock()`     | Auto-mocking libraries | Less boilerplate    | Needs proper Jest config  |
 | Custom Mock Class | Reusable mocks         | Cleaner, extendable | Slightly more setup       |
 | `useFactory`      | Dynamic tests          | Flexible per test   | Slightly more complex     |
+
 Lessons learnt
 -
 This response helped me better understand when certain approaches to mocking classes should be used, as wel as their pros and cons. This allows me to decide which approach is best for me, rather than relying on an AI to decide for me.
