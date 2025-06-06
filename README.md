@@ -54,10 +54,18 @@ const lastID = ids.length > 0 ? Math.max(...ids) : 1;
 
 Whilst designing my API, I knew I wanted to make an OpenAPI specification as this is standard for APIs, and a really good habit to get into doing. To do this, I used AI to generate a very basic OpenAPI specification. Using rhe generated boilerplate, I built upon it until all API endpoints and their usage was covered. Using AI this way, instead of copy-pasting results, I can improve my knowledge and understanding by writing the specification first hand, ensuring I know what is happening rather than relying on AI to do all the heavy lifting.
 
+When creating a unit test for `ArticleController`, I realised I wasn't too sure how to mock the `JsonService` provider. In order to solve this problem, I again decided to use AI to generate me a simple example of mocking a provider class, and passing it to the `RootTestingModule`. By doing this, I now have a much more solid understanding of how mocking works, and how and when to use mocks such as `useClass` and `useValue`.
+
 Summary of what I learned
 -
 I decided to take this technical interview as an opportunity to develop my understanding of TypeScript by writing in this language. Therefore, I decided to use NestJS as my framework, as it is both what I am most familiar with and something I wish to improve my knowledge on.
 
 AI Usage
 -
-As I decided to consider this technical assessment as an opportunity to further develop my knowledge of TypeScript & NestJS, I decided to use as little AI as I could.
+As I decided to consider this technical assessment as an opportunity to further develop my knowledge of TypeScript & NestJS, I decided to use as little AI as I could. With this being said, I only used AI as an education tool to gain a better understanding of how different aspects of the program function, and to elaborate and expand my current knowledge. To do this, I was careful not to pass any code in my context, and only relevant information such as:
+- The name of the language
+- The framework
+- The names of functions (and briefly what they do)
+- The expected result
+
+
